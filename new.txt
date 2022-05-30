@@ -1,0 +1,4 @@
+Name: Anastasiya Gabets
+Age =33
+Animals - no
+wage - 450
