@@ -1,0 +1,262 @@
+Посмотреть, где я
+$ pwd
+/c/Users/Anastasia/30 gr QA
+
+
+2.	Создать папку
+$ mkdir QA1 QA2 QA3 QA4
+
+
+3.	 Зайти в папку
+$ cd QA1
+Anastasia@DESKTOP-AV30EPI MINGW64 ~/30 gr QA/QA1
+
+$ ls -la
+total 4
+drwxr-xr-x 1 Anastasia 197121 0 May 23 19:14 ./cd
+drwxr-xr-x 1 Anastasia 197121 0 May 2m3 19:14 ../
+
+
+4.	 Создать 3 папки
+$ mkdir p1 p2 p3
+
+Anastasia@DESKTOP-AV30EPI MINGW64 ~/30 gr QA/QA1
+$ ls -la
+total 4
+drwxr-xr-x 1 Anastasia 197121 0 May 23 19:17 ./
+drwxr-xr-x 1 Anastasia 197121 0 May 23 19:14 ../
+drwxr-xr-x 1 Anastasia 197121 0 May 23 19:17 p1/
+drwxr-xr-x 1 Anastasia 197121 0 May 23 19:17 p2/
+drwxr-xr-x 1 Anastasia 197121 0 May 23 19:17 p3/
+
+
+5.	 Зайти в любую папку
+     $ cd p1
+     
+     Anastasia@DESKTOP-AV30EPI MINGW64 ~/30 gr QA/QA1/p1
+     $ pwd
+     /c/Users/Anastasia/30 gr QA/QA1/p1
+  
+   
+6.	Создать 5 файлов (3 txt, 2 json)
+$ touch f1.txt f2.txt f3.txt
+
+Anastasia@DESKTOP-AV30EPI MINGW64 ~/30 gr QA/QA1/p1
+$ ls -la
+total 0
+drwxr-xr-x 1 Anastasia 197121 0 May 23 19:19 ./
+drwxr-xr-x 1 Anastasia 197121 0 May 23 19:17 ../
+-rw-r--r-- 1 Anastasia 197121 0 May 23 19:19 f1.txt
+-rw-r--r-- 1 Anastasia 197121 0 May 23 19:19 f2.txt
+-rw-r--r-- 1 Anastasia 197121 0 May 23 19:19 f3.txt
+
+Anastasia@DESKTOP-AV30EPI MINGW64 ~/30 gr QA/QA1/p1
+$ touch f1.json f2.json f3.json
+
+Anastasia@DESKTOP-AV30EPI MINGW64 ~/30 gr QA/QA1/p1
+$ ls -la
+total 4
+drwxr-xr-x 1 Anastasia 197121 0 May 23 19:20 ./
+drwxr-xr-x 1 Anastasia 197121 0 May 23 19:17 ../
+-rw-r--r-- 1 Anastasia 197121 0 May 23 19:20 f1.json
+-rw-r--r-- 1 Anastasia 197121 0 May 23 19:19 f1.txt
+-rw-r--r-- 1 Anastasia 197121 0 May 23 19:20 f2.json
+-rw-r--r-- 1 Anastasia 197121 0 May 23 19:19 f2.txt
+-rw-r--r-- 1 Anastasia 197121 0 May 23 19:20 f3.json
+-rw-r--r-- 1 Anastasia 197121 0 May 23 19:19 f3.txt
+
+
+7.	 Создать 3 папки
+$ mkdir pap1 pap2 pap3
+
+
+
+8.	 Вывести список содержимого папки
+$ ls -la
+total 4
+drwxr-xr-x 1 Anastasia 197121 0 May 23 19:21 ./
+drwxr-xr-x 1 Anastasia 197121 0 May 23 19:17 ../
+drwxr-xr-x 1 Anastasia 197121 0 May 23 19:21 2/
+-rw-r--r-- 1 Anastasia 197121 0 May 23 19:20 f1.json
+-rw-r--r-- 1 Anastasia 197121 0 May 23 19:19 f1.txt
+-rw-r--r-- 1 Anastasia 197121 0 May 23 19:20 f2.json
+-rw-r--r-- 1 Anastasia 197121 0 May 23 19:19 f2.txt
+-rw-r--r-- 1 Anastasia 197121 0 May 23 19:20 f3.json
+-rw-r--r-- 1 Anastasia 197121 0 May 23 19:19 f3.txt
+drwxr-xr-x 1 Anastasia 197121 0 May 23 19:21 pap1/
+drwxr-xr-x 1 Anastasia 197121 0 May 23 19:21 pap2/
+drwxr-xr-x 1 Anastasia 197121 0 May 23 19:21 pap3/
+
+
+9.	Открыть любой txt файл
+10.	 Написать туда что-нибудь, любой текст.
+11.	Сохранить и выйти.
+
+$ cat >> f1.txt
+hello, friend
+i`m Nastia
+
+
+$ vim p2/f1.txt   - тоже вариант
+
+
+12.	 Выйти из папки на уровень выше
+$ cd ..
+
+
+13.	 Переместить любые 2 файла, которые вы создали, в любую другую 
+папку.
+$ mv p1/f1.txt p2/f1.txt
+$ mv p1/f2.txt p2/f2.txt
+
+
+14.	 Скопировать любые 2 файла, которые вы создали, в любую другую 
+папку.
+$ cp p1/f1.json p2/f1.json
+$ cp p1/f2.json p2/f2.json
+
+Итог: Anastasia@DESKTOP-AV30EPI MINGW64 ~/30 gr QA/QA1/p2
+$ ls -la
+total 1
+drwxr-xr-x 1 Anastasia 197121  0 May 23 19:32 ./
+drwxr-xr-x 1 Anastasia 197121  0 May 23 19:17 ../
+-rw-r--r-- 1 Anastasia 197121  0 May 23 19:31 f1.json
+-rw-r--r-- 1 Anastasia 197121 14 May 23 19:25 f1.txt
+-rw-r--r-- 1 Anastasia 197121  0 May 23 19:32 f2.json
+-rw-r--r-- 1 Anastasia 197121  0 May 23 19:19 f2.txt
+
+
+15.	 Найти файл по имени
+$ cd p2
+
+
+16.	Просмотреть содержимое в реальном времени (команда grep) изучите как 
+она работает.
+
+$ ls |grep QA1
+QA1/
+
+$ grep -n test QA.txt
+1:test 1
+2:test 2
+3:test 3
+4:test 4
+
+
+17.	Вывести несколько первых строк из текстового файла.
+
+$ head -n2 QA.txt
+test 1
+test 2
+
+
+18.	Вывести несколько последних строк из текстового файла.
+
+$ tail -n2 QA.txt
+666
+999
+
+
+19.	Просмотреть содержимое длинного файла (команда less) изучите как она 
+работает.
+
+$ less QA.txt
+
+
+20.      Вывести дату и время
+
+$ date
+Wed May 25 21:25:42 RTZ 2022
+
+
+	
+23.	Задание *
+24.	Отправить http запрос на сервер.
+25.	http://162.55.220.72:5005/terminal-hw-request
+
+$ curl http://162.55.220.72:5005/terminal-hw-request
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   283  100   283    0     0   3213      0 --:--:-- --:--:-- --:--:--  3252{
+  "Intro": "Hello!! This is your the first response from server",
+  "Tasks": {
+    "Task_1": "Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)",
+    "result": [
+      "Your_String",
+      "Your_number"
+    ]
+  }
+}
+
+
+$ curl http://162.55.220.72:5005/get_method?'name=nastia&age=33'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    24  100    24    0     0    251      0 --:--:-- --:--:-- --:--:--   252[
+  "nastia",
+  "33"
+]
+
+
+
+
+26.	Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 
+
+$ pwd
+/c/Users/Anastasia/30 gr QA
+cd qw
+touch z1.txt z2.txt z3.txt z1.json z2.json z3.json
+mkdir e1 e2 e3
+cd ..
+cd qw
+ls -la
+./script.sh
+
+
+
+Anastasia@DESKTOP-AV30EPI MINGW64 ~/30 gr QA
+$ cd QA2
+
+Anastasia@DESKTOP-AV30EPI MINGW64 ~/30 gr QA/QA2
+$ mkdir qw as zx
+
+Anastasia@DESKTOP-AV30EPI MINGW64 ~/30 gr QA/QA2
+$ cd qw
+
+Anastasia@DESKTOP-AV30EPI MINGW64 ~/30 gr QA/QA2/qw
+$ touch z1.txt z2.txt z3.txt z1.json z2.json z3.json
+
+Anastasia@DESKTOP-AV30EPI MINGW64 ~/30 gr QA/QA2/qw
+$ mkdir e1 e2 e3
+
+Anastasia@DESKTOP-AV30EPI MINGW64 ~/30 gr QA/QA2/qw
+$ cd ..
+
+Anastasia@DESKTOP-AV30EPI MINGW64 ~/30 gr QA/QA2
+$ cd qw
+
+Anastasia@DESKTOP-AV30EPI MINGW64 ~/30 gr QA/QA2/qw
+$ ls -la
+total 4
+drwxr-xr-x 1 Anastasia 197121 0 May 26 14:16 ./
+drwxr-xr-x 1 Anastasia 197121 0 May 26 14:16 ../
+drwxr-xr-x 1 Anastasia 197121 0 May 26 14:16 e1/
+drwxr-xr-x 1 Anastasia 197121 0 May 26 14:16 e2/
+drwxr-xr-x 1 Anastasia 197121 0 May 26 14:16 e3/
+-rw-r--r-- 1 Anastasia 197121 0 May 26 14:16 z1.json
+-rw-r--r-- 1 Anastasia 197121 0 May 26 14:16 z1.txt
+-rw-r--r-- 1 Anastasia 197121 0 May 26 14:16 z2.json
+-rw-r--r-- 1 Anastasia 197121 0 May 26 14:16 z2.txt
+-rw-r--r-- 1 Anastasia 197121 0 May 26 14:16 z3.json
+-rw-r--r-- 1 Anastasia 197121 0 May 26 14:16 z3.txt
+
+cd QA2
+mkdir qw as zx
+cd qw
+touch z1.txt z2.txt z3.txt z1.json z2.json z3.json
+mkdir e1 e2 e3
+cd ..
+cd qw
+ls -la
+./myscript.sh
