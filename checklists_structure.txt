@@ -1,5 +1,0 @@
-page
-type
-titile
-status
-comments
